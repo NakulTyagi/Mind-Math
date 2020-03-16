@@ -1,4 +1,4 @@
-document.getElementById("1").innerHTML=Math.floor(Math.random() * 10);;
+document.getElementById("1").innerHTML=Math.floor(Math.random() * 10);
 document.getElementById("2").innerHTML=Math.floor(Math.random() * 10);
 document.getElementById("3").innerHTML=Math.floor(Math.random() * 10);
 document.getElementById("4").innerHTML=Math.floor(Math.random() * 10);
@@ -11,6 +11,8 @@ var x3=document.getElementById("3");
 var x4=document.getElementById("4");
 var x5=document.getElementById("5");
 var xr=document.getElementById("res");
+
+var p1=x1.innerHTML,p2=x2.innerHTML,p3=x3.innerHTML,p4=x4.innerHTML,p5=x5.innerHTML;
 
 var op1=null ,op2=null,res=null,flag=0,operator=null;
 
@@ -179,4 +181,10 @@ function reset(){
     document.getElementById("eq-b").innerHTML=null;
     document.getElementById("eq-c").innerHTML=null;
     document.getElementById("eq-d").innerHTML=null;
+    x1.innerHTML=p1;
+    x2.innerHTML=p2;
+    x3.innerHTML=p3;
+    x4.innerHTML=p4;
+    x5.innerHTML=p5;
+    flag=0;
 }
